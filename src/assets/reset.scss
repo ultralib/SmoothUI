@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: 400;
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-touch-callout: none;
+}
+
+body {
+	min-width: 360px;
+}
+
+html {
+	font-size: 16px;
+	font-family:
+		'SF Pro',
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		'Segoe UI',
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		'Open Sans',
+		'Helvetica Neue',
+		sans-serif;
+}
+
+html,
+body,
+.smooth-app {
+	width: 100vw;
+	height: 100%;
+	overflow: hidden;
+
+	touch-action: pan-y;
+
+	background: var(--theme-bg);
+	color: var(--theme-text);
+}
+
+.smooth-app {
+	display: flex;
+
+	overflow: visible;
+}
+
+.smooth-container {
+	height: 100%;
+	width: 100vw;
+
+	overflow: visible;
+
+	display: flex;
+	flex-direction: column;
+
+	margin: auto;
+	touch-action: pan-y;
+
+	@media screen and (min-width: 768px) {
+		width: 100%;
+		max-width: 620px;
+	}
+}
+
+// Text selection
+::-moz-selection {
+	background: var(--color-primary-alpha2);
+}
+::selection {
+	background: var(--color-primary-alpha2);
+}
+
+// Links
+a {
+	text-decoration: none;
+}
+
+// Form spacings
+.smooth-field,
+.smooth-readonly-field,
+.smooth-password-field,
+.smooth-editable-field,
+.smooth-checkbox,
+.smooth-select,
+.smooth-select-group,
+.smooth-checkbox__container,
+.smooth-suspense,
+.smooth-button,
+.smooth-profile,
+.smooth-list {
+	& + .smooth-label,
+	& + .smooth-checkbox__container,
+	& + .smooth-alert,
+	& + .smooth-suspense,
+	& + .smooth-editable-field {
+		margin-top: 16px;
+	}
+
+	& + .smooth-button {
+		margin-top: 20px;
+	}
+}
+.smooth-button + .smooth-button {
+	margin-top: 8px;
+}
+
+// Form textarea
+textarea.smooth-field {
+	height: auto;
+	resize: none;
+}
