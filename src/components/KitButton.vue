@@ -131,7 +131,7 @@ withDefaults(
 		}
 	}
 
-	&:deep(svg) {
+	& svg {
 		margin-right: 8px;
 	}
 }

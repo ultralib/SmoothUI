@@ -33,7 +33,7 @@
 		flex-direction: column;
 		padding-bottom: 20px;
 
-		&:deep(p) {
+		& > p {
 			width: 100%;
 
 			margin-top: 12px;
@@ -52,7 +52,7 @@
 		padding: var(--form-padding-desktop);
 	}
 
-	&:deep(.smooth-button + .smooth-link) {
+	& > .smooth-button + .smooth-link {
 		margin: 0 auto;
 		margin-top: 12px;
 	}

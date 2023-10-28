@@ -74,7 +74,7 @@ defineEmits<{
 
 		position: relative;
 
-		&:deep(.smooth-field) {
+		& .smooth-field {
 			width: 100%;
 		}
 
@@ -112,7 +112,7 @@ defineEmits<{
 	}
 
 	&[data-one-field='false'] {
-		&:deep(.smooth-field) {
+		& .smooth-field {
 			width: calc(50% - 2px);
 			margin-right: 4px;
 

@@ -13,13 +13,13 @@
 
 	color: var(--theme-title);
 
-	&:deep(p) {
+	& > p {
 		font-size: inherit;
 		font-weight: inherit;
 
 		color: inherit;
 	}
-	&:deep(small) {
+	& > small {
 		font-size: 16px;
 		font-weight: 460;
 

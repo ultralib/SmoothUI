@@ -29,7 +29,7 @@
 
 		z-index: 10;
 
-		&:deep(.smooth-title) {
+		& > .smooth-title {
 			color: var(--color-light-title);
 		}
 	}

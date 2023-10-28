@@ -50,7 +50,7 @@ defineEmits<{
 	display: flex;
 	flex-direction: column;
 
-	&:deep(.smooth-list-item + .smooth-button) {
+	& > .smooth-list-item + .smooth-button {
 		margin-top: 8px;
 	}
 }

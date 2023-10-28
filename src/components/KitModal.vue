@@ -96,7 +96,7 @@ defineEmits<{
 		}
 	}
 
-	&:deep(.smooth-title) {
+	& > .smooth-title {
 		color: var(--color-light-title);
 		font-size: 20px;
 		font-weight: 460;
