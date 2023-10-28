@@ -7,7 +7,7 @@
 	</form>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-form {
 	--form-border-radius: 12px;
 	--form-padding: 28px;

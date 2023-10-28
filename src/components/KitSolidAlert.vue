@@ -27,7 +27,7 @@ defineProps<{
 	</KitCard>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-solid-alert {
 	margin-bottom: 12px;
 }

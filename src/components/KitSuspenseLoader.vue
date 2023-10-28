@@ -22,7 +22,7 @@ defineProps<{
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-suspense-loader {
 	display: inline-block;
 

@@ -37,7 +37,7 @@ defineProps<{
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-suspense {
 	width: 100%;
 }

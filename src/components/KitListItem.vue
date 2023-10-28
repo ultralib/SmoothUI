@@ -56,7 +56,7 @@ defineEmits<{
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-list-item {
 	padding: 8px;
 

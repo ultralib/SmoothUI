@@ -15,7 +15,7 @@ defineProps<{
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-popover {
 	--popover-spacing: 4px;
 	--popover-padding: 4px 8px;

@@ -3,7 +3,7 @@
 		<slot />
 	</div>
 </template>
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-title {
 	width: 100%;
 	margin-bottom: 28px;

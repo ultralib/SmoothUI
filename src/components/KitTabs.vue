@@ -43,7 +43,7 @@ const activeTab: Ref<string> = ref(props.tabs[0]?.name ?? '');
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-tabs {
 	width: 100%;
 	height: max-content;

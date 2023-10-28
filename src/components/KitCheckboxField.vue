@@ -20,7 +20,7 @@ defineProps<{
 	</label>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-checkbox {
 	position: absolute;
 	left: 0;

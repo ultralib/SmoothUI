@@ -47,7 +47,7 @@ function setValue(val: SelectOption) {
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-select-group {
 	--select-group-padding: 4px;
 	--select-group-border-radius: 8px;

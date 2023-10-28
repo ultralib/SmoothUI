@@ -98,7 +98,7 @@ function onChangeValue(e: Event) {
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-password-field {
 	--password-field-border-radius: 8px;
 	--password-toggle-border-radius: 6px;

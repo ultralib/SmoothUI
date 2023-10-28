@@ -44,7 +44,7 @@ defineEmits<{
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-list {
 	width: 100%;
 	display: flex;

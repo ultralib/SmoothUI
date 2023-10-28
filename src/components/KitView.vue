@@ -9,7 +9,7 @@
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-view {
 	overflow: hidden;
 	overflow-y: scroll;

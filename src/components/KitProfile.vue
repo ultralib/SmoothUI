@@ -67,7 +67,7 @@ defineProps<{
 		</div>
 	</div>
 </template>
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-profile {
 	--profile-margin: 8px;
 

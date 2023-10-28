@@ -20,7 +20,7 @@ defineProps<{
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-alert {
 	width: 100%;
 

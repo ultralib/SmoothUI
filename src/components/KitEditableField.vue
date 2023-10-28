@@ -90,7 +90,7 @@ function copyValue() {
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-editable-field {
 	display: flex;
 	flex-direction: column;

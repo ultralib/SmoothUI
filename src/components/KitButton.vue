@@ -22,7 +22,7 @@ withDefaults(
 	</button>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-button {
 	--button-border-radius: 8px;
 

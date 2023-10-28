@@ -115,7 +115,7 @@ function setValue(val: SelectOption) {
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-select {
 	--select-border-width: 1px;
 	--select-border-radius: 8px;

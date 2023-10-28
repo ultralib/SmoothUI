@@ -8,7 +8,7 @@ defineProps<{
 	<div class="smooth-suspense-skeleton" :data-look="look">Загрузка...</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 $base-color: var(--skeleton-base);
 $shine-color: var(--skeleton-shine);
 $animation-duration: 6s;

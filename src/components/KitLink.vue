@@ -11,7 +11,7 @@ defineProps<{
 	</RouterLink>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-link {
 	width: max-content;
 

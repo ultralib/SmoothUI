@@ -13,7 +13,7 @@ defineProps<{
 	<slot />
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-label {
 	margin-bottom: 6px;
 

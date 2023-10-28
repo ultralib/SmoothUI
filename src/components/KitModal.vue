@@ -46,7 +46,7 @@ defineEmits<{
 	</div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .smooth-modal {
 	width: 100%;
 	max-width: 480px;
