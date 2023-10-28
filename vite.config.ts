@@ -10,7 +10,7 @@ export default defineConfig({
 		lib: {
 			entry: './src/index.ts',
 			name: 'SmoothUI',
-			fileName: 'smooth-ui'
+			fileName: 'index'
 		},
 		rollupOptions: {
 			external: ['vue'],
