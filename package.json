@@ -5,8 +5,8 @@
 	"files": [
 		"dist"
 	],
-	"main": "./dist/brian-component-lib.umd.cjs",
-	"module": "./dist/brian-component-lib.js",
+	"main": "./dist/smooth-ui.umd.cjs",
+	"module": "./dist/smooth-ui.js",
 	"exports": {
 		".": {
 			"import": "./dist/smooth-ui.js",
