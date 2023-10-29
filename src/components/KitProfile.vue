@@ -253,21 +253,17 @@ defineProps<{
 		& > span {
 			display: inline-block;
 
-			margin-right: 4px;
-
 			color: inherit;
 
 			&::after {
 				content: '•';
 
-				margin-right: 4px;
+				margin: 0 4px;
 
 				display: inline-block;
 			}
 		}
 		& > span:last-child {
-			margin-right: 0;
-
 			&::after {
 				content: unset;
 				display: none;
