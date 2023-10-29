@@ -5,7 +5,7 @@ defineProps<{
 	status?: 'offline' | 'online' | 'none';
 
 	name: string;
-	text?: string;
+	text?: string | string[];
 	avatar?: string;
 	rating?: number;
 	clickable?: boolean;
@@ -38,7 +38,14 @@ defineProps<{
 				{{ name }}
 			</p>
 			<p v-if="text" class="smooth-profile__text">
-				{{ text }}
+				<template v-if="typeof text === 'string'">
+					{{ text }}
+				</template>
+				<template v-else>
+					<span v-for="textElement in text" :key="textElement">
+						{{ textElement }}
+					</span>
+				</template>
 			</p>
 			<div v-if="rating" class="smooth-profile__rating">
 				<svg
@@ -240,7 +247,32 @@ defineProps<{
 
 		font-size: 13px;
 		font-weight: 460;
+
 		color: var(--color-light-secondary2);
+
+		& > span {
+			display: inline-block;
+
+			margin-right: 4px;
+
+			color: inherit;
+
+			&::after {
+				content: '•';
+
+				margin-right: 4px;
+
+				display: inline-block;
+			}
+		}
+		& > span:last-child {
+			margin-right: 0;
+
+			&::after {
+				content: unset;
+				display: none;
+			}
+		}
 	}
 	&__rating {
 		margin-top: 2px;

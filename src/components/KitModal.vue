@@ -97,6 +97,9 @@ defineEmits<{
 	}
 
 	& > .smooth-title {
+		/* To avoid overlap of title with close button */
+		padding-right: 40px;
+
 		color: var(--color-light-title);
 		font-size: 20px;
 		font-weight: 460;
