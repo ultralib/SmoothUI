@@ -20,8 +20,8 @@ defineEmits<{
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
-					width="22"
-					height="22"
+					width="28"
+					height="28"
 					viewBox="0 0 25 25"
 					fill="none"
 				>
@@ -53,7 +53,7 @@ defineEmits<{
 	min-height: 180px;
 	height: max-content;
 
-	padding: 16px 20px;
+	padding: 40px 32px;
 
 	display: flex;
 	flex-direction: column;
@@ -65,7 +65,13 @@ defineEmits<{
 	background: var(--color-basic);
 
 	border: 1px solid var(--color-border);
-	border-radius: 16px;
+	border-radius: 24px;
+
+	@media screen and (min-width: 768px) {
+		padding: 60px 80px;
+
+		border-radius: 16px;
+	}
 
 	&__close {
 		width: 42px;
@@ -76,8 +82,8 @@ defineEmits<{
 		justify-content: center;
 
 		position: absolute;
-		top: 8px;
-		right: 12px;
+		top: 12px;
+		right: 16px;
 
 		background: transparent;
 
@@ -93,6 +99,11 @@ defineEmits<{
 
 		&:hover {
 			background: var(--color-darker);
+		}
+
+		@media screen and (min-width: 768px) {
+			top: 20px;
+			right: 24px;
 		}
 	}
 
