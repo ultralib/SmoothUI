@@ -13,6 +13,8 @@ defineProps<{
 			:alt="value"
 			class="smooth-readonly-field__icon"
 		/>
+		<slot v-else name="icon" />
+
 		<p class="smooth-readonly-field__value">
 			{{ value }}
 		</p>
