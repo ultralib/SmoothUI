@@ -48,8 +48,8 @@ function copyValue() {
 			<svg
 				class="smooth-editable-field__icon"
 				xmlns="http://www.w3.org/2000/svg"
-				width="20"
-				height="20"
+				width="18"
+				height="18"
 				viewBox="0 0 25 25"
 				fill="none"
 			>
@@ -158,7 +158,7 @@ function copyValue() {
 		top: 50%;
 		transform: translateY(-50%);
 
-		padding: 10px;
+		padding: 8px;
 
 		display: flex;
 		align-items: center;
