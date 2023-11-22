@@ -100,11 +100,11 @@ const activeTab: Ref<string> = ref(props.tabs[0]?.name ?? '');
 		@media screen and (min-width: 768px) {
 			padding: 6px 12px;
 
-			margin-right: 12px;
+			margin-right: 8px;
 
 			transition: 0.2s ease-in-out background;
 
-			border-radius: 6px;
+			border-radius: 8px;
 
 			&[data-active='true'] {
 				background-color: var(--theme-bg-hover);
