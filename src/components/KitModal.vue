@@ -49,7 +49,7 @@ defineEmits<{
 <style lang="scss">
 .smooth-modal {
 	width: 100%;
-	max-width: 480px;
+	max-width: 580px;
 	min-height: 180px;
 	height: max-content;
 

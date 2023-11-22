@@ -41,6 +41,8 @@ defineProps<{
 	&__title {
 		color: var(--color-light-title);
 
+		font-family: var(--font-heading);
+
 		&[data-size='sm'] {
 			margin-bottom: 8px;
 
