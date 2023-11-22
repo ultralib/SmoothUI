@@ -1,10 +1,17 @@
 <script setup lang="ts">
-defineProps<{
-	text: string;
-}>();
+withDefaults(
+	defineProps<{
+		text: string;
+
+		position?: 'top-left' | 'top-center' | 'top-right';
+	}>(),
+	{
+		position: 'top-left'
+	}
+);
 </script>
 <template>
-	<div class="smooth-popover">
+	<div class="smooth-popover" :data-position="position">
 		<slot />
 
 		<div class="smooth-popover__panel">
@@ -31,6 +38,20 @@ defineProps<{
 		visibility: visible;
 	}
 
+	&[data-position='top-left'] &__panel {
+		bottom: calc(100% + var(--popover-spacing));
+		left: 0;
+	}
+	&[data-position='top-center'] &__panel {
+		bottom: calc(100% + var(--popover-spacing));
+		left: 50%;
+		transform: translate(-50%, 0);
+	}
+	&[data-position='top-right'] &__panel {
+		bottom: calc(100% + var(--popover-spacing));
+		right: 0;
+	}
+
 	&__panel {
 		width: max-content;
 		max-width: 360px;
@@ -39,9 +60,6 @@ defineProps<{
 		padding: var(--popover-padding);
 
 		position: absolute;
-		bottom: calc(100% + var(--popover-spacing));
-		left: 50%;
-		transform: translate(-50%, 0);
 
 		background: var(--color-darkest);
 		color: var(--color-light-secondary);
