@@ -14,6 +14,7 @@
 	color: var(--theme-title);
 
 	& > p {
+		font-family: var(--font-heading);
 		font-size: inherit;
 		font-weight: inherit;
 
