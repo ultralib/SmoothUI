@@ -24,6 +24,8 @@ defineProps<{
 
 	margin-bottom: 8px;
 
+	position: relative;
+
 	display: flex;
 	flex-direction: column;
 
