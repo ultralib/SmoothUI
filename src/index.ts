@@ -3,6 +3,7 @@ import KitAlertIcon from './components/KitAlertIcon.vue';
 import KitButton from './components/KitButton.vue';
 import KitCard from './components/KitCard.vue';
 import KitCheckboxField from './components/KitCheckboxField.vue';
+import KitCircleProgress from './components/KitCircleProgress.vue';
 import KitEditableField from './components/KitEditableField.vue';
 import KitField from './components/KitField.vue';
 import KitFieldGroup from './components/KitFieldGroup.vue';
@@ -31,6 +32,7 @@ export {
 	KitButton,
 	KitCard,
 	KitCheckboxField,
+	KitCircleProgress,
 	KitEditableField,
 	KitField,
 	KitFieldGroup,
