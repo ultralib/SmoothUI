@@ -69,12 +69,13 @@ const activeTab: Ref<string> = ref(props.tabs[0]?.name ?? '');
 	}
 
 	&[data-solid='true'] &__tab {
+		&[data-active='true'] .smooth-tabs__tab_title {
+			color: var(--color-primary) !important;
+		}
+
 		@media screen and (min-width: 768px) {
 			&[data-active='true'] {
 				background-color: var(--color-primary-alpha2) !important;
-			}
-			&[data-active='true'] .smooth-tabs__tab_title {
-				color: var(--color-primary) !important;
 			}
 
 			&:hover {
