@@ -1,5 +1,15 @@
+<script setup lang="ts">
+withDefaults(
+	defineProps<{
+		direction?: 'vertical' | 'horizontal';
+	}>(),
+	{
+		direction: 'vertical'
+	}
+);
+</script>
 <template>
-	<div class="smooth-title">
+	<div class="smooth-title" :data-direction="direction">
 		<slot />
 	</div>
 </template>
@@ -12,6 +22,18 @@
 	font-weight: 760;
 
 	color: var(--theme-title);
+
+	&[data-direction='horizontal'] {
+		display: flex;
+		align-items: center;
+
+		& > svg {
+			width: 24px;
+			height: 24px;
+
+			margin-right: 8px;
+		}
+	}
 
 	& > p {
 		font-family: var(--font-heading);
